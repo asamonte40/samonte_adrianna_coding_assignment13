@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 import Button from "./components/Button";
 import Label from "./components/Label";
 import Text from "./components/Text";
@@ -26,12 +26,12 @@ function App() {
     <div className="App">
       <section>
         <h3>Button Component</h3>
-        <Button label="Click Me" disabled={isDisabled} onClick={handleClick}/>
+        <Button label="Click Me" disabled={isDisabled} onClick={handleClick} />
       </section>
 
       <section>
         <h3>Label Component</h3>
-        <Label/>
+        <Label />
       </section>
 
       <section>
@@ -42,13 +42,15 @@ function App() {
       <section>
         <h3>Dropdown Component</h3>
         <label>Choose a colour:</label>
-        <Dropdown options={["Red", "Orange", "Yellow", "Green", "Blue", "Purple"]} />
+        <Dropdown
+          options={["Red", "Orange", "Yellow", "Green", "Blue", "Purple"]}
+        />
       </section>
 
       <section>
         <h3>RadioButton Component</h3>
         <label>Choose your payment:</label>
-        <RadioButton name="group"  options={["Visa", "PayPal", "Mastercard"]}/>
+        <RadioButton name="group" options={["Visa", "PayPal", "Mastercard"]} />
       </section>
 
       <section>
@@ -65,7 +67,13 @@ function App() {
         <h3>Card Component</h3>
         <Card>
           <h3>City Night</h3>
-          <p>The city never slept. Even through the thick cracks of the apartment window, you could hear its restless hum, distant car horns, muffled laughter from the street below, the whir of neon signs flickering on even before the sun had set. It was background music to their shared life, a soundscape you had grown used to, even comforted by.</p>
+          <p>
+            The city never slept. Even through the thick cracks of the apartment
+            window, you could hear its restless hum, distant car horns, muffled
+            laughter from the street below, the whir of neon signs flickering on
+            even before the sun had set. It was background music to their shared
+            life, a soundscape you had grown used to, even comforted by.
+          </p>
         </Card>
       </section>
 

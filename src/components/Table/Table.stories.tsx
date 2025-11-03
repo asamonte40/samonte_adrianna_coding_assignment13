@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import Table from './Table';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import Table from "./Table";
 import TableHeader from "./TableHeader";
 import TableRow from "./TableRow";
 import TableCell from "./TableCell";

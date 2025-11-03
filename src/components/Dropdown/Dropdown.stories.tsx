@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import Dropdown from './Dropdown';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import Dropdown from "./Dropdown";
 
 const meta = {
   component: Dropdown,
@@ -13,14 +13,13 @@ export const Default: Story = {
   args: {
     label: "Choose a colour:",
     options: ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"],
-    }
+  },
 };
 
 export const Disabled: Story = {
   args: {
     label: "Choose a colour:",
     options: ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"],
-      disabled: true
-    }
-
+    disabled: true,
+  },
 };

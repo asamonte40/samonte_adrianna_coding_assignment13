@@ -14,10 +14,14 @@ const StyledButton = styled.button<{ disabled?: boolean; color?: string }>`
   transition: 0.3s;
   width: 100%;
   max-width: 200px;
-
 `;
 
-const Button: React.FC<ButtonProps> = ({ label="Click Me", disabled, color, onClick }) => {
+const Button: React.FC<ButtonProps> = ({
+  label = "Click Me",
+  disabled,
+  color,
+  onClick,
+}) => {
   return (
     <StyledButton
       disabled={disabled}

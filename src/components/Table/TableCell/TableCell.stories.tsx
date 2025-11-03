@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import TableCell from './TableCell';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import TableCell from "./TableCell";
 
 const meta = {
   component: TableCell,

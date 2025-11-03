@@ -3,7 +3,6 @@ import { render, screen } from "@testing-library/react";
 import Button from "./Button";
 import "@testing-library/jest-dom";
 
-
 test("renders button and checks visibility", () => {
   render(<Button label="Test Button" />);
   const buttonElement = screen.getByText("Test Button");
@@ -16,4 +15,3 @@ test("button changes background when disabled", () => {
   expect(buttonElement).toHaveStyle("opacity: 0.5");
   expect(buttonElement).toHaveStyle("cursor: not-allowed");
 });
-

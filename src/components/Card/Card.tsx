@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { CardProps } from "./Card.types";
 
-const StyledCard = styled.div<{ disabled?: boolean, color?: string }>`
+const StyledCard = styled.div<{ disabled?: boolean; color?: string }>`
   width: 500px;
   padding: 20px;
   margin: auto;

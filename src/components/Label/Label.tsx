@@ -10,8 +10,12 @@ const StyledLabel = styled.label<{ color?: string; disabled?: boolean }>`
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "default")};
 `;
 
-const Label: React.FC<LabelProps> = ({ text="Label", color, disabled }) => {
-  return <StyledLabel color={color} disabled={disabled}>{text}</StyledLabel>;
+const Label: React.FC<LabelProps> = ({ text = "Label", color, disabled }) => {
+  return (
+    <StyledLabel color={color} disabled={disabled}>
+      {text}
+    </StyledLabel>
+  );
 };
 
 export default Label;

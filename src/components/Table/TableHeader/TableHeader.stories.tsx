@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import TableHeader from './TableHeader';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import TableHeader from "./TableHeader";
 
 const meta = {
   component: TableHeader,

@@ -23,12 +23,12 @@ It includes reusable, responsive components designed for consistency and accessi
 - Card
 
 Each component includes the following files:
+
 - `Component_name.tsx`
 - `Component_name.stories.tsx`
 - `Component_name.types.tsx`
 - `Component_name.tests.tsx`
 - `index.ts`
-
 
 ---
 
@@ -82,6 +82,7 @@ npm test
 npm run build            # React production build
 npm run build-storybook  # Storybook static build
 ```
+
 9. Creating the **Dockerfile** to containerize both builds
 
 ## BUILD AND RUN CONTAINER

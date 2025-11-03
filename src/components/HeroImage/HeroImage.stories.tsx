@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import HeroImage from './HeroImage';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import HeroImage from "./HeroImage";
 
 const meta = {
   component: HeroImage,
@@ -12,13 +12,13 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     src: "/mofusand.jpg",
-    text: "mofusand"
-  }
+    text: "mofusand",
+  },
 };
 export const Disabled: Story = {
   args: {
     src: "/mofusand.jpg",
     text: "mofusand",
-    disabled: true
-  }
+    disabled: true,
+  },
 };

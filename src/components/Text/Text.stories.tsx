@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import Text from './Text';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import Text from "./Text";
 
 const meta = {
   component: Text,
@@ -11,13 +11,13 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "TEXT"
-  }
+    children: "TEXT",
+  },
 };
 
 export const Disabled: Story = {
   args: {
     children: "TEXT",
-    disabled: true
-  }
+    disabled: true,
+  },
 };

@@ -30,9 +30,17 @@ const TextOverlay = styled.div`
   color: #000;
 `;
 
-const HeroImage: React.FC<HeroImageProps> = ({ src="/mofusand.jpg", text="mofusand", disabled }) => {
-  return <StyledHero disabled={disabled}><StyledImg src={src} alt={text} /><TextOverlay>{text}</TextOverlay>
-</StyledHero>
+const HeroImage: React.FC<HeroImageProps> = ({
+  src = "/mofusand.jpg",
+  text = "mofusand",
+  disabled,
+}) => {
+  return (
+    <StyledHero disabled={disabled}>
+      <StyledImg src={src} alt={text} />
+      <TextOverlay>{text}</TextOverlay>
+    </StyledHero>
+  );
 };
 
 export default HeroImage;

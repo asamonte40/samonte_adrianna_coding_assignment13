@@ -21,4 +21,3 @@ test("radio buttons respect disabled prop", () => {
     expect(radio).toBeDisabled();
   });
 });
-

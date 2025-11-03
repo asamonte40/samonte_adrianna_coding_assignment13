@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import TableRow from './TableRow';
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import TableRow from "./TableRow";
 
 const meta = {
   component: TableRow,
@@ -11,7 +11,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children:(
+    children: (
       <tr>
         <td>Andrea</td>
         <td>Orange</td>

@@ -10,7 +10,7 @@ test("renders table content", () => {
           <td>Data</td>
         </tr>
       </tbody>
-    </Table>
+    </Table>,
   );
   expect(screen.getByText("Data")).toBeVisible();
 });
@@ -23,8 +23,8 @@ test("applies disabled styles", () => {
           <td>Disabled</td>
         </tr>
       </tbody>
-    </Table>
+    </Table>,
   );
-  const element = screen.getByText("Disabled").closest("table");
-  expect(element).toHaveStyle("opacity: 0.6");
+  const table = screen.getByRole("table");
+  expect(table).toHaveStyle("opacity: 0.6");
 });

@@ -1,23 +1,28 @@
 # Assignment 13 – UI Component Library with Code Quality Checks
 
 ## Overview
+
 This project adds automated code quality checks (Prettier, ESLint, and Jest tests) using Husky pre-commit hooks and a CI/CD workflow using GitHub Actions.
 It also includes a Docker container that hosts a production build of the component library at **localhost:8018**.
 
 # Pre-Commit Checks (Husky)
+
 Before commiting, husky automatically runs:
-  - Prettier formatting check
-  - ESLint linting check
-  - Jest tests
-**If any of these fail, the commit is blocked until the issue is resolved.**
+
+- Prettier formatting check
+- ESLint linting check
+- Jest tests
+  **If any of these fail, the commit is blocked until the issue is resolved.**
 
 # CI/CD Workflow (GitHub Actions)
+
 Every push or pull request triggers a GitHub Actions workflow that:
-  - Installs dependencies
-  - Runs Prettier
-  - Runs ESLint
-  - Runs tests
-**If any step fails, GitHub marks the build ad failed.**
+
+- Installs dependencies
+- Runs Prettier
+- Runs ESLint
+- Runs tests
+  **If any step fails, GitHub marks the build ad failed.**
 
 ---
 
@@ -25,23 +30,24 @@ Every push or pull request triggers a GitHub Actions workflow that:
 
 1. Make sure **Docker Desktop** is installed and running
 
-2. Created a new folder and named it *samonte_adrianna_ui_garden_build_checks*
+2. Created a new folder and named it _samonte_adrianna_ui_garden_build_checks_
 
 3. Clone the repository in the folder and navigate to the project folder
 
-  ```bash
-   git clone https://github.com/asamonte40/samonte_adrianna_coding_assignment12.git
+```bash
+ git clone https://github.com/asamonte40/samonte_adrianna_coding_assignment12.git
 
-   cd samonte_adrianna_coding_assignment12
-  ```
+ cd samonte_adrianna_coding_assignment12
+```
+
 4. Intialize Husky and install it:
 
-  npx husky init
-  npm install --save-dev husky
+npx husky init
+npm install --save-dev husky
 
 5. Install Prettier:
 
-  npm install --save-dev prettier
+npm install --save-dev prettier
 
 6. Git and Husky Setup
 
@@ -62,8 +68,8 @@ After this, any normal commit like `git commit -m "message"` will automatically 
 
 8. Code Quality Checks
 
-  - Run Prettier: npx prettier --check .
-  - Run ESLint: npx eslint .
+- Run Prettier: npx prettier --check .
+- Run ESLint: npx eslint .
   -Run tests: npm test
 
 ## BUILD AND RUN CONTAINER
@@ -90,7 +96,3 @@ Storybook: http://localhost:8018/storybook
 ```bash
 docker stop samonte_adrianna_coding_assignment13
 ```
-
-
-
-

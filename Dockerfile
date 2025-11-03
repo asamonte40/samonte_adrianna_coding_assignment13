@@ -2,7 +2,7 @@
 FROM node:20 AS build
 
 #set working directory
-WORKDIR /samonte_adrianna_ui_garden
+WORKDIR /samonte_adrianna_ui_garden_build_checks
 
 #copy package files and install dependencies
 COPY package*.json ./
@@ -22,18 +22,18 @@ RUN npm run build-storybook
 FROM nginx:stable-alpine
 
 #set working directory for production
-WORKDIR /samonte_adrianna_ui_garden
+WORKDIR /samonte_adrianna_ui_garden_build_checks
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 #copy react built to /app
-COPY --from=build /samonte_adrianna_ui_garden/build /usr/share/nginx/html
+COPY --from=build /samonte_adrianna_ui_garden_build_checks/build /usr/share/nginx/html
 
 #copy storybook build to /storybook
-COPY --from=build /samonte_adrianna_ui_garden/storybook-static /usr/share/nginx/html/storybook
+COPY --from=build /samonte_adrianna_ui_garden_build_checks/storybook-static /usr/share/nginx/html/storybook
 
-#expose port 8083
-EXPOSE 8083
+#expose port 8018
+EXPOSE 8018
 
 #start NGINX
 CMD ["nginx", "-g", "daemon off;"]

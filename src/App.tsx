@@ -12,7 +12,7 @@ import Card from "./components/Card";
 import Table from "./components/Table";
 import TableHeader from "./components/Table/TableHeader";
 import TableRow from "./components/Table/TableRow";
-  import TableCell from "./components/Table/TableCell";
+import TableCell from "./components/Table/TableCell";
 import TableFooter from "./components/Table/TableFooter";
 
 function App() {
